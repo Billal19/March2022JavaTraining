@@ -17,9 +17,9 @@ public class HeadlessConcept {
         //incognito mode: private mode
 
         ChromeOptions co = new ChromeOptions();
-        //co.addArguments("--headless");
-        //co.setHeadless(true);
-        co.addArguments("--incognito");
+        //co.addArguments("--headless"); // this is used to run the test in a headless mode
+        //co.setHeadless(true); // this is can be true or false , true means we want the execution in a headless mode , false means the opposite 
+        co.addArguments("--incognito"); // this is used to run our test cases in private mode incognito 
        
         WebDriver driver = new ChromeDriver(co);
         driver.get("https://www.google.com");
